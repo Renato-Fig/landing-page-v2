@@ -1,0 +1,45 @@
+#pages-examples {
+    background-color: #F0F0F5;
+
+    #carousel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+
+        button {
+            font-size: 2em;
+            color: #3B60E4;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .aside {
+            width: 24%;         
+            filter: blur(0.8px);
+        }
+
+        img {
+            width: 38%;
+
+            border-radius: 12px;
+            box-shadow: 0 0 6px rgba($color: #000000, $alpha: 0.2);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+            #carousel {
+                .aside {
+                    display: none;
+                }
+
+                img {
+                    width: 80%;
+                }
+            }
+        
+    }
+}

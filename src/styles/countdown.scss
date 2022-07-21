@@ -1,0 +1,32 @@
+#countdown {
+    top: 0;
+    z-index: 2;
+    background-color: #F0F0F5;
+    padding: 10px;
+    width: 100%;
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            margin: 0 20px;
+    
+            span {
+                font-size: 2em;
+                font-weight: 700;
+                color: #F73640;
+            }
+    
+            p {
+                font-size: 0.8em;
+            }
+        }
+    }
+}
