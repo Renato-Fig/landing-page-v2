@@ -1,0 +1,29 @@
+#social-proof {
+    .container {
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+
+            img {
+                width: 100%;
+
+                box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.2);
+
+                border-radius: 6px;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .wrapper {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+}
